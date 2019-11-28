@@ -1,0 +1,23 @@
+﻿@page
+@model AH_RazorPagesContoso.Pages.HelloModel
+@{
+    ViewData["Title"] = "Hello";
+}
+<section class="jumbotron">
+    <h1>Abdol</h1>
+    <h2>Hello</h2>
+    <h3> The time on the server is @DateTime.Now</h3>
+
+</section>
+
+<form method="POST">
+    <fieldset>
+        <label> Enter your name: </label>
+        <input asp-for="UserName" />
+        <input type="submit" />
+    </fieldset>
+</form>
+
+<div id="result">
+    @this.Model.UserName
+</div>
