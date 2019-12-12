@@ -13,6 +13,8 @@ namespace AH_RazorPagesContoso.Models
         {
         }
 
-        public DbSet<AH_RazorPagesContoso.Models.Student> Student { get; set; }
+        public DbSet<Student> Student { get; set; }
+        public DbSet<Course> Course { get; set; }
+        public DbSet<Enrollment> Enrollment { get; set; }
     }
 }
